@@ -16,6 +16,6 @@ TEST(Statistics, AverageNaNForEmpty) {
     //All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
     
-    //Design the REQUIRE statement here.
+    //Design the gtest EXPECT statement here.
     //Use http://www.cplusplus.com/reference/cmath/isnan/
 }
