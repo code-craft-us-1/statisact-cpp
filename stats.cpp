@@ -1,5 +1,25 @@
 #include "stats.h"
+#include <vector>
+#include <cmath>  // For NAN and std::abs
+#include <algorithm>
+#include <numeric>
 
-Stats Statistics::ComputeStatistics(const std::vector<___>& ) {
-    //Implement statistics here
+using namespace Statistics;
+
+Stats ComputeStatistics(const std::vector<float>& data) {
+    Stats result;
+
+    if (data.empty()) {
+        result.average = NAN;
+        result.max = NAN;
+        result.min = NAN;
+        return result;
+    }
+
+    result.max = std::ranges::max(data);
+    result.min = std::ranges::min(data);
+    auto const count = static_cast<float>(data.size());
+    result.average = std::reduce(data.begin(), data.end()) / count;
+
+    return result;
 }
