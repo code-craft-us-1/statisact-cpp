@@ -1,4 +1,8 @@
 #include "stats.h"
+#include <vector>
+#include <cmath>  // For NAN and std::abs
+#include <algorithm>
+#include <numeric>
 
 #include <algorithm> //For std::max and std::min
 #include <vector>
