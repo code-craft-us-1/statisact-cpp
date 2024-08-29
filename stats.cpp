@@ -1,4 +1,5 @@
 #include "stats.h"
+#include <climits>
 
 using namespace Statistics;
 Statistics::Stats Statistics::ComputeStatistics(const std::vector<double>& arr) {
