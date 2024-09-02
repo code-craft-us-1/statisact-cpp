@@ -21,5 +21,5 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& ip1) {
         sts.min =* std::min_element(ip1.begin(),ip1.end());
         sts.max =* std::max_element(ip1.begin(),ip1.end());
     }
-    return st;
+    return sts;
 }
