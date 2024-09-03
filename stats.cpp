@@ -3,7 +3,7 @@
 #include<numeric>
 #include<algorithm>
 
-Stats Statistics::ComputeStatistics(const std::vector<float>& i) {
+Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& i) {
     //Implement statistics here
     Stats stats;
     if(i.size()==0)
